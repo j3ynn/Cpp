@@ -1,34 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   phonebook.hpp                                      :+:      :+:    :+:   */
+/*   phonebook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbellucc <jbellucc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/16 14:02:50 by jbellucc          #+#    #+#             */
-/*   Updated: 2025/12/16 14:06:51 by jbellucc         ###   ########.fr       */
+/*   Created: 2025/12/16 14:02:43 by jbellucc          #+#    #+#             */
+/*   Updated: 2025/12/16 15:47:55 by jbellucc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP
+#include "phonebook.hpp"
 
-#include "contact.hpp"
-#include <string>
-#include <iostream>
-
-class Phonebook
+Phonebook::Phonebook()
 {
-	private:
-	Contact _contacts[8];
-	int		_count;//numero dei contatti max 8
+}
 
-	public:
-	Phonebook();
-	~Phonebook();
-
-	void	add();//aggiunge un contatto
-	void	search() const;//cerca e mostra i contatti 
-};
-
-#endif
+Phonebook::~Phonebook()
+{
+}
+//stampa, legge una riga di testo, esce dal programma
+static std::string input(std::string prompt)
+{
+    std::string input;
+    
+}

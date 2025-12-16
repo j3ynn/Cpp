@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   contact.hpp                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jbellucc <jbellucc@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/12/16 14:02:56 by jbellucc          #+#    #+#             */
+/*   Updated: 2025/12/16 14:02:57 by jbellucc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef CONTACT_HPP
 # define CONTACT_HPP
 
@@ -24,7 +36,7 @@ class Contact
 	void setnick(std::string nickname);
 	void setphone(std::string phonenumber);
 	void setdark(std::string darksecret);
-	//getter ottine il valore privato(const garantisce che la funzione non modifica la classe)
+	//getter ottiene il valore privato(const garantisce che la funzione non modifica la classe)
 	std::string getfirst() const;
 	std::string getlast() const;
 	std::string getnick() const;
