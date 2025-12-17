@@ -6,7 +6,7 @@
 /*   By: jbellucc <jbellucc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 14:02:50 by jbellucc          #+#    #+#             */
-/*   Updated: 2025/12/16 14:06:51 by jbellucc         ###   ########.fr       */
+/*   Updated: 2025/12/17 14:07:31 by jbellucc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,14 @@ class Phonebook
 	private:
 	Contact _contacts[8];
 	int		_count;//numero dei contatti max 8
-
+	int		_contact;//dove inserire il contatto
+	
 	public:
 	Phonebook();
 	~Phonebook();
 
-	void	add();//aggiunge un contatto
-	void	search() const;//cerca e mostra i contatti 
+	void	Add();//aggiunge un contatto
+	void	Search() const;//cerca e mostra i contatti 
 };
 
 #endif

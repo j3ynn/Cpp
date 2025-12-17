@@ -6,7 +6,7 @@
 /*   By: jbellucc <jbellucc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 14:02:56 by jbellucc          #+#    #+#             */
-/*   Updated: 2025/12/16 14:02:57 by jbellucc         ###   ########.fr       */
+/*   Updated: 2025/12/17 14:11:51 by jbellucc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Contact
 	std::string _lastname;
 	std::string _nickname;
 	std::string _phonenumber;
-	std::string _darkestsecret;
+	std::string _darksecret;
 
 //metodi
 	public:

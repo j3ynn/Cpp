@@ -6,7 +6,7 @@
 /*   By: jbellucc <jbellucc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 14:03:01 by jbellucc          #+#    #+#             */
-/*   Updated: 2025/12/16 14:03:02 by jbellucc         ###   ########.fr       */
+/*   Updated: 2025/12/17 14:12:14 by jbellucc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void Contact::setphone(std::string phonenumber)
 
 void Contact::setdark(std::string darksecret)
 {
-	_darkestsecret = darksecret;
+	_darksecret = darksecret;
 }
 
 std::string Contact::getfirst() const
@@ -67,5 +67,5 @@ std::string Contact::getphone() const
 
 std::string Contact::getdark() const
 {
-	return (_darkestsecret);
+	return (_darksecret);
 }
