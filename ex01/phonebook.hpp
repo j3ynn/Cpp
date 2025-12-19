@@ -6,7 +6,7 @@
 /*   By: jbellucc <jbellucc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 14:02:50 by jbellucc          #+#    #+#             */
-/*   Updated: 2025/12/17 15:17:49 by jbellucc         ###   ########.fr       */
+/*   Updated: 2025/12/19 11:57:38 by jbellucc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 #include "contact.hpp"
 #include <string>
 #include <iostream>
+#include <iomanip>
+#include <cstdlib>
 
 class Phonebook
 {
