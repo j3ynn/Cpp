@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   phonebook.cpp                                      :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbellucc <jbellucc@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/19 10:21:38 by jbellucc          #+#    #+#             */
-/*   Updated: 2025/12/19 12:42:02 by jbellucc         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "phonebook.hpp"
 
 Phonebook::Phonebook() :_count(0),_index(0)
@@ -37,12 +25,12 @@ static std::string input(std::string prompt)
 	}
 	return input;
 }
-//aggiungi un nuovo contatto
+
 void Phonebook::Add()
 {
 	std::cout << "‧˙✧add contact˙✧˚‧\n";
 
-	if (_count < 8)
+	if (_count <= 8)
 	{
 		_contacts[_index].setfirst(input("✧first name: "));
 		_contacts[_index].setlast(input("˚last name: "));
@@ -50,7 +38,8 @@ void Phonebook::Add()
 		_contacts[_index].setphone(input("✧phone number: "));
 		_contacts[_index].setdark(input("‧dark secret: "));
 		_index = (_index + 1) % 8;	//Se _index è 7, (7 + 1) % 8 = 0
-		_count ++;
+		if (_count < 8)
+			_count ++;
 	}
 	return;
 }
@@ -61,7 +50,7 @@ static std::string truncate(std::string str)
 		return str.substr(0, 9) + ".";
 	return str;
 }
-//mostra i contatti
+
 void Phonebook::Search() const
 {
 	std::string input;
@@ -89,7 +78,7 @@ void Phonebook::Search() const
 	}
 	std::cout << "\n";
 	std::cout << "˚‧enter index: ";
-	std::getline(std::cin, input);//per inserire index di un determinato contatto
+	std::getline(std::cin, input);
 	if (std::cin.eof())
 		exit(0);
 	if (input.length() == 1 && input[0] >= '0' && input[0] <= '7')
